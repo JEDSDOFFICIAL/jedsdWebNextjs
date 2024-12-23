@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Button } from "../ui/button";
+import React from "react";
+
 
 function HomepageProject() {
   /*// State to keep track of whether 'Articles' or 'Journals' is selected
