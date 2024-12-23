@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button } from "../ui/button";
 
 function HomepageProject() {
-  // State to keep track of whether 'Articles' or 'Journals' is selected
+  /*// State to keep track of whether 'Articles' or 'Journals' is selected
   const [selectedCategory, setSelectedCategory] = useState("Articles");
 
   // Sample data for articles and journals
@@ -77,7 +77,7 @@ function HomepageProject() {
         </div>
       </div>
     );
-  };
+  };*/
 
   return (
     <div className="h-fit w-full flex flex-col items-start justify-center pt-11 gap-3">
