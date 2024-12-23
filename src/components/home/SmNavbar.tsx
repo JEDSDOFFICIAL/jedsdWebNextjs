@@ -47,7 +47,7 @@ function SmNavbar() {
         <User />
       </div>
       {isClicked && (
-        <div className="fixed top-0 left-0 w-full h-full flex z-[111]">
+        <div className="fixed top-0 left-0 w-full h-screen flex z-[111]">
           <div className="bg-black/80 backdrop-filter backdrop-blur-sm bg-opacity-20 w-full h-full p-4 slide-in-left">
             <X
               onClick={closeModal}
@@ -90,14 +90,14 @@ function SmNavbar() {
         </div>
       )}
       {isAboutClicked && (
-        <div className="fixed top-0 left-0 w-full h-full flex z-[999]  overflow-y-scroll">
+        <div className="fixed top-0 left-0 w-full h-screen flex z-[999]  overflow-y-scroll">
           <div className="bg-black/80 backdrop-filter backdrop-blur-sm bg-opacity-20 w-full h-fit min-h-screen py-9  p-4 slide-in-left">
             <ChevronLeft
               onClick={AboutcloseModal}
               className="cursor-pointer text-white absolute left-3 top-2 size-7"
             />
             <AboutNavbar />
-            <div className="absolute top-2 right-3 flex gap-6 justify-center items-center h-fit w-fit">
+            <div className="absolute top-2 right-3 flex gap-6 justify-center items-center h-fit w-fit text-white">
               <MailCheckIcon className="hover:scale-125 transition-all duration-300 cursor-pointer" />
               <FacebookIcon className="hover:scale-125 transition-all duration-300 cursor-pointer" />
               <Instagram className="hover:scale-125 transition-all duration-300 cursor-pointer" />
