@@ -7,6 +7,7 @@ function AuthorGuideline() {
   );
   const ClickedEvent = (e: string) => {
     setIsNavButtonClicked(e);
+   
   };
 
   return (
@@ -109,6 +110,7 @@ function AuthorGuideline() {
                 variant="destructive"
                 size="lg"
                 className="mt-4 border border-black shadow-md"
+                onClick={()=>{alert("We are currently working on it ... plz check after some time")}}
               >
                 Read More
               </Button>
@@ -159,6 +161,7 @@ function AuthorGuideline() {
                 variant="destructive"
                 size="lg"
                 className="mt-4 border border-black shadow-md"
+                onClick={()=>{alert("We are currently working on it ... plz check after some time")}}
               >
                 Read More !
               </Button>
@@ -192,6 +195,7 @@ function AuthorGuideline() {
                         variant="destructive"
                         size="lg"
                         className="mt-4 border border-black shadow-md"
+                        onClick={()=>{alert("We are currently working on it ... plz check after some time")}}
                     >
                         Read More
                     </Button>

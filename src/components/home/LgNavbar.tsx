@@ -2,9 +2,8 @@ import {
   ChevronDown,
   FacebookIcon,
   Instagram,
-LogIn,
+  LogIn,
   MailCheckIcon,
-
   Search,
   XIcon,
 } from "lucide-react";
@@ -12,9 +11,7 @@ import React from "react";
 
 import {
   DropdownMenu,
-
   DropdownMenuContent,
-  
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
@@ -31,18 +28,52 @@ function Navbar() {
               </div>
             </DropdownMenuTrigger>
 
-            <div>Journals</div>
-            <div>Articles</div>
-            <div>Publish an Article</div>
+            <div
+              onClick={() => {
+                alert(
+                  "We are currently working on it ... plz check after some time"
+                );
+              }}
+              className="cursor-pointer"
+            >
+              Journals
+            </div>
+            <div
+              onClick={() => {
+                alert(
+                  "We are currently working on it ... plz check after some time"
+                );
+              }}
+              className="cursor-pointer"
+            >
+              Articles
+            </div>
+            <div
+              onClick={() => {
+                alert(
+                  "We are currently working on it ... plz check after some time"
+                );
+              }}
+              className="cursor-pointer"
+            >
+              Publish an Article
+            </div>
           </div>
 
           <div className="h-full flex items-center gap-16">
-            <div className="flex bg-white h-fit w-fit gap-2 flex-row-reverse items-center border-2 rounded-2xl px-3 py-2 border-black underline">
+            <div
+              className="flex bg-white h-fit w-fit gap-2 flex-row-reverse items-center border-2 rounded-2xl px-3 py-2 border-black underline"
+              onClick={() => {
+                alert(
+                  "We are currently working on it ... plz check after some time"
+                );
+              }}
+            >
               Search for an Article
               <Search />
             </div>
             <div className="flex items-center gap-4">
-              <div className="flex item-center gap-2 flex-row">
+              <div className="flex item-center gap-2 flex-row cursor-pointer" onClick={()=>{alert("We are currently working on it ... plz check after some time")}}>
                 <LogIn /> Sign In
               </div>
             </div>
@@ -141,9 +172,9 @@ function Navbar() {
         </div>
         <div className="absolute bottom-2 right-3 flex gap-6 justify-center items-center h-fit w-fit">
           <MailCheckIcon className="hover:scale-125 transition-all duration-300 cursor-pointer" />
-          <FacebookIcon  className="hover:scale-125 transition-all duration-300 cursor-pointer" />
-          <Instagram     className="hover:scale-125 transition-all duration-300 cursor-pointer" />
-          <XIcon         className="hover:scale-125 transition-all duration-300 cursor-pointer" />
+          <FacebookIcon className="hover:scale-125 transition-all duration-300 cursor-pointer" />
+          <Instagram className="hover:scale-125 transition-all duration-300 cursor-pointer" />
+          <XIcon className="hover:scale-125 transition-all duration-300 cursor-pointer" />
         </div>
       </DropdownMenuContent>
     </DropdownMenu>

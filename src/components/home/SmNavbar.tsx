@@ -13,6 +13,7 @@ import {
 import React, { useState } from "react";
 import "./SmNavbar.css"; // Import the CSS file for animations
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 function SmNavbar() {
   const [isClicked, setIsClicked] = useState(false);
@@ -40,11 +41,11 @@ function SmNavbar() {
     <div className="w-full h-20 flex bg-white backdrop-filter backdrop-blur-sm bg-opacity-50  text-black items-center justify-between p-3">
       <div className="flex h-full w-auto gap-6 items-center">
         <AlignLeft onClick={ClickEvent} />
-        <div className="logoArea h-full w-[8rem] bg-red-400">a</div>
+        <Link className="logoArea h-full w-[8rem] bg-red-400" href={'/'}></Link>
       </div>
       <div className="flex h-full w-auto gap-6 items-center">
-        <SearchIcon />
-        <User />
+        <SearchIcon onClick={()=>{alert("We are currently working on it ... plz check after some time")}}/>
+        <User onClick={()=>{alert("We are currently working on it ... plz check after some time")}}/>
       </div>
       {isClicked && (
         <div className="fixed top-0 left-0 w-full h-screen flex z-[111]">

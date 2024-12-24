@@ -25,7 +25,7 @@ function HomeFirstElement() {
         <p className="md:text-xl text-lg text-black text-left pl-3">
         Explore the cutting-edge research, stay updated with the latest developments, and join our community of innovators and thought leaders in the field of digital and embedded systems.
         </p>
-        <Button size={"lg"} className="text-xl ml-3">Join with us</Button>
+        <Button size={"lg"} className="text-xl ml-3" onClick={()=>{alert("We are currently working on it ... plz check after some time")}}>Join with us</Button>
       </div>
     </div>
   );

@@ -7,6 +7,7 @@ function ReviewerGuideline() {
       );
       const ClickedEvent = (e: string) => {
         setIsNavButtonClicked(e);
+        
       };
     
       return (
@@ -53,7 +54,7 @@ function ReviewerGuideline() {
               </ul>
         
               <div className='w-full h-fit flex items-center justify-center'>
-                <Button variant={"destructive"} size={"lg"} className='mt-4'>Read More</Button>
+                <Button variant={"destructive"} size={"lg"} className='mt-4'  onClick={()=>{alert("We are currently working on it ... plz check after some time")}}>Read More</Button>
               </div>
             </div>
             )}
@@ -80,7 +81,7 @@ function ReviewerGuideline() {
           
                 <h2 className="text-xl font-bold mb-2 text-gray-700/50">4. Ethical Guidelines:</h2>
                <div className='w-full h-fit flex items-center justify-center'>
-                <Button variant={"destructive"} size={"lg"} className='mt-4'>Read More</Button>
+                <Button variant={"destructive"} size={"lg"} className='mt-4' onClick={()=>{alert("We are currently working on it ... plz check after some time")}}>Read More</Button>
               </div>
              </div>
             )}

@@ -7,6 +7,7 @@ function EditorGuideline() {
       );
       const ClickedEvent = (e: string) => {
         setIsNavButtonClicked(e);
+        
       };
     
       return (
@@ -66,7 +67,7 @@ function EditorGuideline() {
                 <li className='text-gray-950/20'>Reviewer Reports: Reviewers provide detailed feedback and recommendations: accept, minor revisions, major revisions, or reject.</li>
               </ul>
               <div className='w-full h-fit flex items-center justify-center'>
-                <Button variant={"destructive"} size={"lg"} className='mt-4'>Read More</Button>
+                <Button variant={"destructive"} size={"lg"} className='mt-4' onClick={()=>{alert("We are currently working on it ... plz check after some time")}}>Read More</Button>
               </div>
             </div>
             )}
@@ -92,7 +93,7 @@ function EditorGuideline() {
                  <li className='text-gray-950/20'>Raw Data: Authors may be asked to provide raw data for verification purposes.</li>
                </ul>
                <div className='w-full h-fit flex items-center justify-center'>
-                <Button variant={"destructive"} size={"lg"} className='mt-4'>Read More</Button>
+                <Button variant={"destructive"} size={"lg"} className='mt-4'  onClick={()=>{alert("We are currently working on it ... plz check after some time")}}>Read More</Button>
               </div>
              </div>
             )}
@@ -117,7 +118,7 @@ function EditorGuideline() {
                       <li>Transparency: Editorial board members must disclose any potential conflicts of interest related to the manuscripts they handle. Board members will be recused from handling manuscripts where a conflict of interest exists.</li>
                     </ul>
                     <div className='w-full h-fit flex items-center justify-center'>
-                <Button variant={"destructive"} size={"lg"} className='mt-4'>Read More</Button>
+                <Button variant={"destructive"} size={"lg"} className='mt-4'  onClick={()=>{alert("We are currently working on it ... plz check after some time")}}>Read More</Button>
               </div>
                   </div>
                 )
