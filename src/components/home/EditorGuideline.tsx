@@ -51,19 +51,19 @@ function EditorGuideline() {
               <h2 className="text-xl font-bold mb-2">1. Initial Submission:</h2>
               <ul className="list-disc ml-4">
                 <li>Manuscript Submission: Authors submit their manuscripts through the online submission system.</li>
-                <li>Preliminary Check: The editorial office conducts an initial screening to ensure the manuscript adheres to the journal's formatting and ethical guidelines. Manuscripts that do not meet these criteria are returned to the authors for correction.</li>
+                <li>Preliminary Check: The editorial office conducts an initial screening to ensure the manuscript adheres to the journal&apos;s formatting and ethical guidelines. Manuscripts that do not meet these criteria are returned to the authors for correction.</li>
               </ul>
         
               <h2 className="text-xl font-bold mb-2">2. Assignment to Associate Editor:</h2>
               <ul className="list-disc ml-4">
-                <li>Editor Assignment: The Editor-in-Chief assigns the manuscript to an appropriate Associate Editor based on the manuscript's subject area.</li>
+                <li>Editor Assignment: The Editor-in-Chief assigns the manuscript to an appropriate Associate Editor based on the manuscript&apos;s subject area.</li>
                 <li>Reviewer Selection: The Associate Editor selects two or more independent reviewers with expertise in the relevant field.</li>
               </ul>
         
               <h2 className="text-xl font-bold mb-2 text-gray-950/80">3. Peer Review:</h2>
               <ul className="list-disc ml-4">
                 <li className='text-gray-950/60'>Double-Blind Review: JEDSD follows a double-blind review process, where both the reviewers and the authors remain anonymous to each other.</li>
-                <li className='text-gray-950/40'>Review Criteria: Reviewers evaluate the manuscript based on originality, technical quality, significance, clarity, and relevance to the journal's scope.</li>
+                <li className='text-gray-950/40'>Review Criteria: Reviewers evaluate the manuscript based on originality, technical quality, significance, clarity, and relevance to the journal&apos;s scope.</li>
                 <li className='text-gray-950/20'>Reviewer Reports: Reviewers provide detailed feedback and recommendations: accept, minor revisions, major revisions, or reject.</li>
               </ul>
               <div className='w-full h-fit flex items-center justify-center'>

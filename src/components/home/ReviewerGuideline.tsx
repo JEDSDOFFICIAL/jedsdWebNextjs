@@ -47,7 +47,7 @@ function ReviewerGuideline() {
         
               <h2 className="text-lg font-bold mb-2">2. Review Process:</h2>
               <ul className="list-disc ml-4 text-base">
-                <li className='text-gray-800/90'>Confidentiality: Manuscripts under review must be treated as confidential documents. Do not share or discuss the manuscript with others except with the journal's editorial team.</li>
+                <li className='text-gray-800/90'>Confidentiality: Manuscripts under review must be treated as confidential documents. Do not share or discuss the manuscript with others except with the journal&apos;s editorial team.</li>
                 <li className='text-gray-800/80'>Objective Evaluation: Provide an objective and constructive critique of the manuscript. Personal remarks or unprofessional language are unacceptable.</li>
                 <li className='text-gray-800/70'>Timeliness: Complete the review within the stipulated timeframe (typically 2-3 weeks). If additional time is needed, please inform the editorial office as soon as possible.</li>
                 <li className='text-gray-800/60'>Conflict of Interest: Disclose any potential conflicts of interest before agreeing to review. If a conflict arises during the review process, notify the editorial office immediately.</li>

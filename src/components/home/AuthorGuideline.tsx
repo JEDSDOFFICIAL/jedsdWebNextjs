@@ -186,7 +186,7 @@ function AuthorGuideline() {
                   <li className=" text-gray-600/80">Cover letter with the necessary details.</li>
                   <li className=" text-gray-700/60">High-quality figures and tables.</li>
                   <li className=" text-gray-700/40">Compliance with ethical guidelines.</li>
-                  <li className=" text-gray-700/20">All authors' contributions and conflicts of interest disclosed.</li>
+                  <li className=" text-gray-700/20">All authors&apos; contributions and conflicts of interest disclosed.</li>
                 </ul>
           
                 
