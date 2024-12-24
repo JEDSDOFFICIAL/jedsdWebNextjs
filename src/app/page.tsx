@@ -1,5 +1,7 @@
 "use client";
 
+import ContactInfoHome from "@/components/home/ContactInfoHome";
+import { HallofFrames } from "@/components/home/HallofFrames";
 import HomeFirstElement from "@/components/home/HomeFirstElement";
 import HomeSecondElement from "@/components/home/HomeSecondElement";
 import Navbar from "@/components/home/LgNavbar";
@@ -18,6 +20,12 @@ export default function Home() {
       <HomeFirstElement />
       <HomeSecondElement />
       <UploadProcedure/>
+      <div className="w-full h-fit bg-[url('/bg-last-down.png')] bg-cover bg-center bg-no-repeat">
+
+
+      <HallofFrames/>
+      <ContactInfoHome/>
+      </div>
     </div>
   );
 }
