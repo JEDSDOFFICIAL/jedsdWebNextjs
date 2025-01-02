@@ -1,7 +1,7 @@
 "use client";
 
 
-import ContactInfoHome from "@/components/home/ContactInfoHome";
+// import ContactInfoHome from "@/components/home/ContactInfoHome";
 import Footer from "@/components/home/Footer";
 
 import HomeFirstElement from "@/components/home/HomeFirstElement";
@@ -30,7 +30,7 @@ export default function Home() {
         <Testimonials />
         {/* <TeamCarosel /> */}
         
-        <ContactInfoHome />
+        {/* <ContactInfoHome /> */}
 
         <Footer/>
       
