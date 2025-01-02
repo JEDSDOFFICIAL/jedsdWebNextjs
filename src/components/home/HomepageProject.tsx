@@ -80,7 +80,7 @@ function HomepageProject() {
   };*/
 
   return (
-    <div className="h-fit w-full flex flex-col items-start justify-center pt-11 gap-3">
+    <div className="h-fit w-full flex flex-col items-center justify-center pt-11 gap-3">
       <p className="md:text-5xl text-3xl text-black font-bold underline text-center w-full">
         Recent Posts
       </p>
@@ -99,7 +99,7 @@ function HomepageProject() {
         </div>
       </div> */}
 
-      <div className="w-full h-[25rem] text-center text-black text-xl flex items-center justify-center bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+      <div className=" border border-black  w-[90%] h-[25rem] text-center text-black text-xl flex items-center justify-center bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 ">
         {" "}
         We are working on it...
       </div>

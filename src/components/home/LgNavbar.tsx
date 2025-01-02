@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import {
   ChevronDown,
   FacebookIcon,
@@ -7,7 +8,6 @@ import {
   Search,
   XIcon,
 } from "lucide-react";
-import React from "react";
 
 import {
   DropdownMenu,
@@ -16,14 +16,24 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 function Navbar() {
+  const [isChangeBg, setIsChangeBg] = useState(false);  
+  
+   useEffect(() => {
+     setTimeout(() => {
+       setIsChangeBg(true);
+     },3000)
+   }, []);
+
   return (
     <DropdownMenu>
-      <div className="w-full h-20 bg-white backdrop-filter backdrop-blur-sm bg-opacity-50  text-black flex justify-around items-center border-b-2 border-black py-3">
+      <div
+        className={`w-full h-fit fixed top-0 left-0 z-50 transition-all ${isChangeBg?'bg-white/80 backdrop-blur-sm':'bg-transparent'} duration-300 bg-transparent flex justify-around items-center py-3`}
+      >
         <div className="logoArea h-full w-[8rem] bg-red-400">a</div>
-        <div className="navArea h-full flex items-center w-[calc(100%-14rem)] justify-between  px-8 ">
+        <div className="navArea h-full flex items-center w-[calc(100%-14rem)] justify-between px-8">
           <div className="navArea h-full flex items-center gap-16 text-[1.2rem]">
             <DropdownMenuTrigger asChild>
-              <div className="flex h-fit w-fit gap-2 flex-row items-center cursor-pointer">
+              <div className={`flex h-fit w-fit gap-2 flex-row items-center cursor-pointer ${isChangeBg?' text-black':'text-white'}`}>
                 About Us <ChevronDown />
               </div>
             </DropdownMenuTrigger>
@@ -34,17 +44,7 @@ function Navbar() {
                   "We are currently working on it ... plz check after some time"
                 );
               }}
-              className="cursor-pointer"
-            >
-              Journals
-            </div>
-            <div
-              onClick={() => {
-                alert(
-                  "We are currently working on it ... plz check after some time"
-                );
-              }}
-              className="cursor-pointer"
+              className={`cursor-pointer ${isChangeBg?' text-black':'text-white'}`}
             >
               Articles
             </div>
@@ -54,7 +54,17 @@ function Navbar() {
                   "We are currently working on it ... plz check after some time"
                 );
               }}
-              className="cursor-pointer"
+              className={`cursor-pointer ${isChangeBg?' text-black':'text-white'}`}
+            >
+              Be a Reviewer
+            </div>
+            <div
+              onClick={() => {
+                alert(
+                  "We are currently working on it ... plz check after some time"
+                );
+              }}
+              className={`cursor-pointer ${isChangeBg?' text-black':'text-white'}`}
             >
               Publish an Article
             </div>
@@ -62,7 +72,7 @@ function Navbar() {
 
           <div className="h-full flex items-center gap-16">
             <div
-              className="flex bg-white h-fit w-fit gap-2 flex-row-reverse items-center border-2 rounded-2xl px-3 py-2 border-black underline"
+              className="flex bg-white h-fit w-[20vw] gap-2 flex-row-reverse items-center justify-end border rounded-xl px-3 py-2 border-black underline"
               onClick={() => {
                 alert(
                   "We are currently working on it ... plz check after some time"
@@ -73,7 +83,12 @@ function Navbar() {
               <Search />
             </div>
             <div className="flex items-center gap-4">
-              <div className="flex item-center gap-2 flex-row cursor-pointer" onClick={()=>{alert("We are currently working on it ... plz check after some time")}}>
+              <div
+                className={`flex item-center gap-2 flex-row cursor-pointer ${isChangeBg?'text-black': 'text-white'}`}
+                onClick={() => {
+                  alert("We are currently working on it ... plz check after some time");
+                }}
+              >
                 <LogIn /> Sign In
               </div>
             </div>

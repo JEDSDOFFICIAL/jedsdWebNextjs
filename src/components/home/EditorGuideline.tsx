@@ -12,7 +12,7 @@ function EditorGuideline() {
     
       return (
         <div className="h-fit w-full flex flex-col justify-center items-start">
-          <div className="buttonGroup w-full h-fit flex flex-row md:gap-3 gap-1 justify-around border-b-2 border-gray-900 py-4">
+          <div className="  flex-wrap buttonGroup w-full h-fit flex flex-row md:gap-3 gap-1 justify-around border-b-2 border-gray-900 py-4">
             <Button
               
               className={`

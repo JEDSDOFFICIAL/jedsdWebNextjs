@@ -59,9 +59,7 @@ const ReviewCard = ({
       className={cn(
         "relative w-64 cursor-pointer overflow-hidden rounded-xl border-2 p-4",
         // light styles
-        "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
-        // dark styles
-        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]",
+        "border-gray-950/[1] shadow-sm shadow-black/50 bg-gray-100/85 hover:bg-gray-400/[5]"
       )}
     >
       <div className="flex flex-row items-center gap-2">
@@ -78,10 +76,10 @@ const ReviewCard = ({
   );
 };
 
-export function MarqueeDemo() {
+export function MarqueeDemo({className}: {className?: string}) {
   return (
-    <div className="relative flex h-fit w-full flex-col items-center justify-center overflow-hidden">
-      <Marquee pauseOnHover className="[--duration:20s]">
+    <div className={cn("relative flex h-fit w-full flex-col items-center justify-center overflow-hidden", className)}>
+      <Marquee pauseOnHover className="[--duration:20s]" reverse>
         {firstRow.map((review) => (
           <ReviewCard key={review.username} {...review} />
         ))}

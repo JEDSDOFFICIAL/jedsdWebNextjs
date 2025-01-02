@@ -13,8 +13,8 @@ function UploadProcedure() {
   };
 
   return (
-    <>
-      <div className="h-fit w-full text-center text-4xl underline text-black font-bold py-3">
+    <div className="w-full h-fit bg-[rgb(39,60,90)] px-3">
+      <div className="h-fit w-full text-center md:text-6xl text-3xl underline text-white font-bold py-3">
         Guideline and Policy
       </div>
       <div className="w-full min-h-[80vh] h-fit py-4 flex  md:flex-row flex-col">
@@ -64,25 +64,25 @@ function UploadProcedure() {
           </Button> */}
         </div>
 
-        <div className="h-fit md:w-[75%] w-full">
+        <div className="h-fit md:w-[75%] w-full ">
           {isButtonClicked === "AuthorGuideline" && (
-            <div className="w-full h-full bg-white  text-black text-xs md:text-base">
+            <div className="w-full h-full bg-white  text-black text-xs md:text-base border border-black rounded-lg">
               <AuthorGuideline />
             </div>
           )}
           {isButtonClicked === "Editor" && (
-            <div className="w-full h-full bg-white  text-black text-xs md:text-base" >
+            <div className="w-full h-full bg-white  text-black text-xs md:text-base border border-black rounded-lg" >
               <EditorGuideline />
             </div>
           )}
           {isButtonClicked === "Reviewer" && (
-            <div className="w-full h-full bg-white  text-black text-xs md:text-base">
+            <div className="w-full h-full bg-white  text-black text-xs md:text-base border border-black rounded-lg">
               <ReviewerGuideline />
             </div>
           )}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

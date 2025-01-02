@@ -1,30 +1,39 @@
 "use client";
 
+import Card from "@/components/Genaral/card";
 import ContactInfoHome from "@/components/home/ContactInfoHome";
-import { HallofFrames } from "@/components/home/HallofFrames";
+import Footer from "@/components/home/Footer";
+
 import HomeFirstElement from "@/components/home/HomeFirstElement";
-import HomeSecondElement from "@/components/home/HomeSecondElement";
+// import HomeSecondElement from "@/components/home/HomeSecondElement";
 import Navbar from "@/components/home/LgNavbar";
+import Roadmap from "@/components/home/Roadmap";
 import SmNavbar from "@/components/home/SmNavbar";
+// import TeamCarosel from "@/components/home/TeamCarosel";
+import Testimonials from "@/components/home/Testimonials";
 import UploadProcedure from "@/components/home/UploadProcedure";
 
 export default function Home() {
   return (
-    <div className="bg-gradient-to-r from-cyan-200 via-cyan-100 to-teal-50 h-screen w-screen overflow-auto  no-scrollbar">
-      <div className="NavItems w-full h-fit hidden xl:block fixed z-[10]">
+    <div className="bg-blue-50 h-screen overflow-x-hidden w-screen overflow-auto  no-scrollbar">
+      <div className="NavItems w-full h-fit hidden xl:block fixed z-[555]">
         <Navbar />
       </div>
-      <div className="NavItems w-full h-fit block xl:hidden fixed z-[10]">
+      <div className="NavItems w-full h-fit block xl:hidden fixed z-[555]">
         <SmNavbar />
       </div>
       <HomeFirstElement />
-      <HomeSecondElement />
-      <UploadProcedure/>
-      <div className="w-full h-fit bg-[url('/bg-last-down.png')] bg-cover bg-center bg-no-repeat">
+      <Roadmap />
+      {/* <HomeSecondElement /> */}
+      <UploadProcedure />
+      <div className="w-full h-fit ">
+        <Testimonials />
+        {/* <TeamCarosel /> */}
+        
+        <ContactInfoHome />
 
-
-      <HallofFrames/>
-      <ContactInfoHome/>
+        <Footer/>
+      
       </div>
     </div>
   );

@@ -5,7 +5,6 @@ import HomepageProject from "./HomepageProject";
 function HomeSecondElement() {
   return (
     <div className="w-full h-fit flex flex-col py-4 ">
-      <MarqueeDemo />
       <div className="w-full h-fit ">
 
 

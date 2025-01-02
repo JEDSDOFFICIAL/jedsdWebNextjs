@@ -76,4 +76,10 @@
       -ms-overflow-style: none;  /* IE and Edge */
       scrollbar-width: none;  /* Firefox */
 }
+.red-first{
+  background: radial-gradient(circle, rgba(173,173,173,0.1) 0%, rgb(0,0,0,0.9) 100%);
+}
+}
+*{
+  font-family: 'Times New Roman', Times, serif;
 }
