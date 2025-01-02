@@ -18,7 +18,7 @@ function Testimonials() {
             <div className="flex flex-col bg-[rgb(39,59,90)] rounded-xl">
               <div className="flex-auto p-4 md:p-6">
                 <p className="text-base italic md:text-lg text-gray-100">
-                  " With Preline, we're able to easily track our performance in full detail. It's become an essential tool for us to grow and engage with our audience. "
+                &quot; With Preline, we are able to easily track our performance in full detail. It is become an essential tool for us to grow and engage with our audience. &quot;
                 </p>
               </div>
     
@@ -45,7 +45,7 @@ function Testimonials() {
             <div className="flex flex-col bg-[rgb(39,59,90)] rounded-xl">
               <div className="flex-auto p-4 md:p-6">
                 <p className="text-base italic md:text-lg text-gray-100">
-                  " In September, I will be using this theme for 2 years. I went through multiple updates and changes and I'm very glad to see the consistency and effort made by the team. "
+                &quot; In September, I will be using this theme for 2 years. I went through multiple updates and changes and i am very glad to see the consistency and effort made by the team. &quot;
                 </p>
               </div>
     
@@ -71,7 +71,7 @@ function Testimonials() {
             <div className="flex flex-col bg-[rgb(39,59,90)] rounded-xl">
               <div className="flex-auto p-4 md:p-6">
                 <p className="text-base italic md:text-lg text-gray-100">
-                  " In September, I will be using this theme for 2 years. I went through multiple updates and changes and I'm very glad to see the consistency and effort made by the team. "
+                &quot; In September, I will be using this theme for 2 years. I went through multiple updates and changes and I am very glad to see the consistency and effort made by the team. &quot;
                 </p>
               </div>
     

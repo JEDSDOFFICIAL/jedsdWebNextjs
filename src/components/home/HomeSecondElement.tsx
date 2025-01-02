@@ -1,5 +1,5 @@
 import React from "react";
-import { MarqueeDemo } from "./Marquee";
+
 import HomepageProject from "./HomepageProject";
 
 function HomeSecondElement() {
