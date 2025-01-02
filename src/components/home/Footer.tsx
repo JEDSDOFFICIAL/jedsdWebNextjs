@@ -32,7 +32,7 @@ function Footer() {
       <div className="mt-3 grid space-y-3 text-sm">
         <p><a className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800" href="#">About us</a></p>
         <p><a className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800" href="#">Blog</a></p>
-        <p><a className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800" href="#">Careers</a> <span className="inline text-blue-600">— We're hiring</span></p>
+        <p><a className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800" href="#">Careers</a> <span className="inline text-blue-600">— We&apos;re hiring</span></p>
         <p><a className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800" href="#">Customers</a></p>
         <p><a className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800" href="#">Newsroom</a></p>
         <p><a className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800" href="#">Sitemap</a></p>
@@ -47,7 +47,7 @@ function Footer() {
         <p><a className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800" href="#">Community</a></p>
         <p><a className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800" href="#">Help & Support</a></p>
         <p><a className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800" href="#">eBook</a></p>
-        <p><a className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800" href="#">What's New</a></p>
+        <p><a className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800" href="#">What&apos;s New</a></p>
         <p><a className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800" href="#">Status</a></p>
       </div>
     </div>

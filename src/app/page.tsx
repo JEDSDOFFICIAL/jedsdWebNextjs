@@ -1,6 +1,6 @@
 "use client";
 
-import Card from "@/components/Genaral/card";
+
 import ContactInfoHome from "@/components/home/ContactInfoHome";
 import Footer from "@/components/home/Footer";
 
