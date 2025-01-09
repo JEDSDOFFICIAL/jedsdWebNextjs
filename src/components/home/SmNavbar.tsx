@@ -14,6 +14,7 @@ import React, { useState } from "react";
 import "./SmNavbar.css"; // Import the CSS file for animations
 import { Button } from "../ui/button";
 import Link from "next/link";
+import Image from "next/image";
 
 function SmNavbar() {
   const [isClicked, setIsClicked] = useState(false);
@@ -38,10 +39,11 @@ function SmNavbar() {
   };
 
   return (
-    <div className="w-full h-20 flex bg-white backdrop-filter backdrop-blur-sm bg-opacity-50  text-black items-center justify-between p-3">
+    <div className="w-full h-fit flex bg-white backdrop-filter backdrop-blur-sm bg-opacity-50  text-black items-center justify-between p-3">
       <div className="flex h-full w-auto gap-6 items-center">
         <AlignLeft onClick={ClickEvent} />
-        <Link className="logoArea h-full w-[8rem] bg-red-400" href={'/'}></Link>
+        <Link className="logoArea h-full w-fit" href={'/'}>
+        <Image src={'/logojedsd.jpg'} height={50} width={60} alt="logo"/></Link>
       </div>
       <div className="flex h-full w-auto gap-6 items-center">
         <SearchIcon onClick={()=>{alert("We are currently working on it ... plz check after some time")}}/>

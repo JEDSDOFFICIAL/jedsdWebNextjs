@@ -14,6 +14,7 @@ import {
   DropdownMenuContent,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import Link from "next/link";
 
 function Navbar() {
   const [isChangeBg, setIsChangeBg] = useState(false);  
@@ -27,9 +28,11 @@ function Navbar() {
   return (
     <DropdownMenu>
       <div
-        className={`w-full h-fit fixed top-0 left-0 z-50 transition-all ${isChangeBg?'bg-white/80 backdrop-blur-sm':'bg-transparent'} duration-300 bg-transparent flex justify-around items-center py-3`}
+        className={`w-full h-fit max-h-20 fixed top-0 left-0 z-50 transition-all ${isChangeBg?'bg-white/100 backdrop-blur-sm':'bg-transparent'} duration-300 bg-transparent flex justify-around items-center py-3`}
       >
-        <div className="logoArea h-full w-[8rem] bg-red-400">a</div>
+        <Link href={'/'} className="logoArea h-[4rem] w-[4rem] bg-[url(/logojedsd.jpg)] bg-cover bg-center">
+        
+        </Link>
         <div className="navArea h-full flex items-center w-[calc(100%-14rem)] justify-between px-8">
           <div className="navArea h-full flex items-center gap-16 text-[1.2rem]">
             <DropdownMenuTrigger asChild>
@@ -56,7 +59,7 @@ function Navbar() {
               }}
               className={`cursor-pointer ${isChangeBg?' text-black':'text-white'}`}
             >
-              Be a Reviewer
+              Community
             </div>
             <div
               onClick={() => {
@@ -72,7 +75,7 @@ function Navbar() {
 
           <div className="h-full flex items-center gap-16">
             <div
-              className="flex bg-white h-fit w-[20vw] gap-2 flex-row-reverse items-center justify-end border rounded-xl px-3 py-2 border-black underline"
+              className="flex bg-blue-100 h-fit w-[20vw] gap-2 flex-row-reverse items-center justify-end border rounded-xl px-3 py-2 border-black underline"
               onClick={() => {
                 alert(
                   "We are currently working on it ... plz check after some time"
@@ -120,11 +123,11 @@ function Navbar() {
             <p className=" text-gray-600 hover:text-black transition-all delay-100 cursor-pointer">
               Call for Papers
             </p>
-            <p className=" text-gray-600 hover:text-black transition-all delay-100 cursor-pointer">
+            {/* <p className=" text-gray-600 hover:text-black transition-all delay-100 cursor-pointer">
               Upcoming Conference
-            </p>
+            </p> */}
             <p className=" text-gray-600 hover:text-black transition-all delay-100 cursor-pointer">
-              Award and Recognitions
+              Recognitions
             </p>
             <p className=" text-gray-600 hover:text-black transition-all delay-100 cursor-pointer">
               New Members
@@ -159,29 +162,27 @@ function Navbar() {
             <p className=" text-gray-600 hover:text-black transition-all delay-100 cursor-pointer">
               Open access
             </p>
-            <p className=" text-gray-600 hover:text-black transition-all delay-100 cursor-pointer">
-              Fee policy
-            </p>
+            
             <p className=" text-gray-600 hover:text-black transition-all delay-100 cursor-pointer">
               Peer review
             </p>
-            <p className=" text-gray-600 hover:text-black transition-all delay-100 cursor-pointer">
+            {/* <p className=" text-gray-600 hover:text-black transition-all delay-100 cursor-pointer">
               Research Topics
-            </p>
+            </p> */}
           </div>
         </div>
         <div className="flex flex-col justify-start items-start">
           <h1 className="text-xl underline font-bold py-4">Get in Touch</h1>
 
           <div className="flex flex-col gap-4 text-base">
-            <p className=" text-gray-600 hover:text-black transition-all delay-100 cursor-pointer">
+            {/* <p className=" text-gray-600 hover:text-black transition-all delay-100 cursor-pointer">
               Be a Sponser
-            </p>
+            </p> */}
             <p className=" text-gray-600 hover:text-black transition-all delay-100 cursor-pointer">
               Contact Us
             </p>
             <p className=" text-gray-600 hover:text-black transition-all delay-100 cursor-pointer">
-              Social media and mail
+              mail Us
             </p>
           </div>
         </div>

@@ -9,9 +9,9 @@ function HomeFirstElement() {
     
     <div className="h-screen w-screen flex flex-col lg:flex-row bg-[rgb(39,59,90)] lg:pl-[3rem] relative z-0">
       {/* Content Section */}
-      <div className="h-screen lg:w-[55%] w-full flex flex-col items-center lg:items-start justify-center gap-8  z-[111] ">
-        <div className="md:text-5xl text-xl  w-full font-bold  pl-3 lg:pl-0 lg:text-black text-white ">
-          <h3 className="text-blue-500 md:text-7xl text-4xl font-extrabold newRomman pb-4 md:pb-0">Welcome to</h3>
+      <div className="h-screen lg:w-[75%] w-full flex flex-col items-center lg:items-start justify-center gap-4  z-[111] pt-11">
+        <div className="md:text-5xl text-xl  w-full font-bold  pl-3 lg:pl-0  text-white ">
+          <span className="text-blue-500 md:text-7xl text-4xl font-extrabold newRomman pb-4 md:pb-0">Welcome to</span>
           <br />the Journal of Embedded and Digital System Design 
           <span className=" text-gray-300">(JEDSD)</span>
         </div>
@@ -33,12 +33,12 @@ function HomeFirstElement() {
 
       {/* Image Section for lg and above */}
       <div
-        className="hidden lg:flex h-screen md:w-[45%] w-full items-center justify-center relative z-[999] "
+        className="hidden lg:flex h-screen md:w-[25%] w-full items-center justify-center relative z-[999] bg-gradient-to-r from-slate-500 to-cyan-400"
         style={{
           clipPath: "polygon(0 0, 100% 0%, 100% 100%, 0 100%, 43% 46%)",
         }}
       >
-        <img src="/portrait.jpg" alt="home" className="object-cover h-full w-full" />
+        
       </div>
 
       {/* Background Image for smaller screens */}
