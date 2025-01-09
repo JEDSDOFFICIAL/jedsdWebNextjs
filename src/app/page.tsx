@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import Loader from '@/components/Genaral/Loader';
+// import Loader from '@/components/Genaral/Loader';
 import Footer from "@/components/home/Footer";
 import HomeFirstElement from "@/components/home/HomeFirstElement";
 import Navbar from "@/components/home/LgNavbar";
