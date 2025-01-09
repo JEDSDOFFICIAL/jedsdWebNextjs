@@ -23,6 +23,7 @@ export const metadata: Metadata = {
       },
     ],
   }
+  
 };
 
 export default function RootLayout({
@@ -32,6 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <meta name="google-site-verification" content="P2Y8X-_uCxmaPSyTZKfeZsv6tULWuEao05ezrbrwsGk" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
