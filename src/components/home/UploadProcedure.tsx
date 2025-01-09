@@ -8,9 +8,7 @@ import AuthorGuideline from "./AuthorGuideline";
 function UploadProcedure() {
   const [isButtonClicked, setIsButtonClicked] =
     React.useState("AuthorGuideline");
-  const ClickedEvent = (e: string) => {
-    setIsButtonClicked(e);
-  };
+ 
 
   return (
     <div className="w-full h-fit bg-[rgb(39,60,90)] px-3">
