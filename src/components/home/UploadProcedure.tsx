@@ -6,8 +6,6 @@ import AuthorGuideline from "./AuthorGuideline";
 // import ReviewerGuideline from "./ReviewerGuideline";
 
 function UploadProcedure() {
-  const [isButtonClicked, setIsButtonClicked] =
-    React.useState("AuthorGuideline");
  
 
   return (
@@ -63,7 +61,7 @@ function UploadProcedure() {
         {/* </div> */}
 
         <div className="h-fit md:w-[85%] w-full ">
-          {isButtonClicked === "AuthorGuideline" && (
+          {(
             <div className="w-full h-full bg-white  text-black text-xs md:text-base border border-black rounded-lg">
               <AuthorGuideline />
             </div>
