@@ -67,14 +67,7 @@ function Footer() {
                 About us
               </a>
             </p>
-            <p>
-              <a
-                className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800"
-                href="#"
-              >
-                Blog
-              </a>
-            </p>
+           
             <p>
               <a
                 className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800"
@@ -84,15 +77,7 @@ function Footer() {
               </a>{" "}
               
             </p>
-            <p>
-              <a
-                className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800"
-                href="#"
-              >
-                New Members
-              </a>
-            </p>
-            
+           
           </div>
         </div>
 

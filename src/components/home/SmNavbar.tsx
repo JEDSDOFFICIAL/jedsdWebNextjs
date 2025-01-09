@@ -6,9 +6,10 @@ import {
   Instagram,
   MailCheckIcon,
   SearchIcon,
+  TwitterIcon,
   User,
   X,
-  XIcon,
+ 
 } from "lucide-react";
 import React, { useState } from "react";
 import "./SmNavbar.css"; // Import the CSS file for animations
@@ -57,15 +58,20 @@ function SmNavbar() {
               className="cursor-pointer text-white absolute right-3 top-2 size-7"
             />
             <nav>
-              <ul className="flex flex-col items-center gap-6 text-2xl text-white mt-7">
+              <ul className="flex flex-col items-center gap-10 text-2xl text-white mt-7">
+              <div className="flex flex-col gap-3 items-center justify-center text-2xl text-white ">
                 <li
                   className=" flex flex-row gap-2 items-center justify-center"
                   onClick={AboutClickEvent}
                 >
                   About Us <ChevronRight />
                 </li>
-                <li>Journals</li>
+                <li>Tutorials</li>
                 <li>Articles</li>
+                <li>Download Policies</li>
+              </div>
+              <div className="flex flex-col gap-4 items-center justify-center w-full border-t border-white pt-8">
+               
                 <Button
                   variant={"outline"}
                   size={"lg"}
@@ -83,12 +89,18 @@ function SmNavbar() {
                 <Button
                   variant={"destructive"}
                   size={"lg"}
-                  className="w-full shadow-xl text-xl "
+                  className="w-[95vw] shadow-xl text-xl mt-11"
                 >
                   Sign In
-                </Button>
+                </Button> </div>
               </ul>
             </nav>
+            <div className="absolute bottom-4 right-3 flex gap-6 justify-center items-center h-fit w-fit text-white">
+              <MailCheckIcon className="hover:scale-125 transition-all duration-300 cursor-pointer" />
+              <FacebookIcon className="hover:scale-125 transition-all duration-300 cursor-pointer" />
+              <Instagram className="hover:scale-125 transition-all duration-300 cursor-pointer" />
+              <TwitterIcon className="hover:scale-125 transition-all duration-300 cursor-pointer" />
+            </div>
           </div>
         </div>
       )}
@@ -104,7 +116,7 @@ function SmNavbar() {
               <MailCheckIcon className="hover:scale-125 transition-all duration-300 cursor-pointer" />
               <FacebookIcon className="hover:scale-125 transition-all duration-300 cursor-pointer" />
               <Instagram className="hover:scale-125 transition-all duration-300 cursor-pointer" />
-              <XIcon className="hover:scale-125 transition-all duration-300 cursor-pointer" />
+              <TwitterIcon className="hover:scale-125 transition-all duration-300 cursor-pointer" />
             </div>
           </div>
         </div>
@@ -144,11 +156,9 @@ const AboutNavbar = () => {
               <p className=" text-gray-200 hover:text-white transition-all delay-100 cursor-pointer">
                 Call for Papers
               </p>
+             
               <p className=" text-gray-200 hover:text-white transition-all delay-100 cursor-pointer">
-                Upcoming Conference{" "}
-              </p>
-              <p className=" text-gray-200 hover:text-white transition-all delay-100 cursor-pointer">
-                Award and Recognitions
+                Recognitions
               </p>
               <p className=" text-gray-200 hover:text-white transition-all delay-100 cursor-pointer">
                 New Members
@@ -187,9 +197,7 @@ const AboutNavbar = () => {
               <p className=" text-gray-200 hover:text-white transition-all delay-100 cursor-pointer">
                 Open access
               </p>
-              <p className=" text-gray-200 hover:text-white transition-all delay-100 cursor-pointer">
-                Fee policy
-              </p>
+              
               <p className=" text-gray-200 hover:text-white transition-all delay-100 cursor-pointer">
                 Peer review
               </p>
@@ -204,14 +212,12 @@ const AboutNavbar = () => {
               Get in Touch
             </p>
             <div className="flex flex-col gap-2 text-lg">
-              <p className=" text-gray-200 hover:text-white transition-all delay-100 cursor-pointer">
-                Be a Sponser
-              </p>
+              
               <p className=" text-gray-200 hover:text-white transition-all delay-100 cursor-pointer">
                 Contact Us
               </p>
               <p className=" text-gray-200 hover:text-white transition-all delay-100 cursor-pointer">
-                Social media and mail
+                Mail Us
               </p>
             </div>
           </div>

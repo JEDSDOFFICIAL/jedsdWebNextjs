@@ -112,28 +112,13 @@ function Navbar() {
             <p className=" text-gray-600 hover:text-black transition-all delay-100 cursor-pointer">
               Our Team
             </p>
-          </div>
-        </div>
-        <div className="flex flex-col justify-start items-start">
-          <h1 className="text-xl underline font-bold py-4">
+            <p className=" text-gray-600 hover:text-black transition-all delay-100 cursor-pointer">
             News and Announcement
-          </h1>
-
-          <div className="flex flex-col gap-4 text-base">
-            <p className=" text-gray-600 hover:text-black transition-all delay-100 cursor-pointer">
-              Call for Papers
             </p>
-            {/* <p className=" text-gray-600 hover:text-black transition-all delay-100 cursor-pointer">
-              Upcoming Conference
-            </p> */}
-            <p className=" text-gray-600 hover:text-black transition-all delay-100 cursor-pointer">
-              Recognitions
-            </p>
-            <p className=" text-gray-600 hover:text-black transition-all delay-100 cursor-pointer">
-              New Members
-            </p>
+           
           </div>
         </div>
+     
         <div className="flex flex-col justify-start items-start">
           <h1 className="text-xl underline font-bold py-4">Our Policies</h1>
 
@@ -147,12 +132,19 @@ function Navbar() {
             <p className=" text-gray-600 hover:text-black transition-all delay-100 cursor-pointer">
               Reviewer Guidelines
             </p>
+            <p className=" text-gray-600 hover:text-black transition-all delay-100 cursor-pointer">
+              Recognitions
+            </p>
+           
           </div>
         </div>
         <div className="flex flex-col justify-start items-start">
           <h1 className="text-xl underline font-bold py-4">Publishing Model</h1>
 
           <div className="flex flex-col gap-4 text-base">
+          <p className=" text-gray-600 hover:text-black transition-all delay-100 cursor-pointer">
+              Call for Papers
+            </p>
             <p className=" text-gray-600 hover:text-black transition-all delay-100 cursor-pointer">
               How we publish
             </p>

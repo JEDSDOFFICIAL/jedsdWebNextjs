@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "../ui/button";
 import TypingAnimation from "../ui/typing-animation";
 import { MarqueeDemo } from "./Marquee";
+import { FacebookIcon, Instagram, MailCheckIcon, TwitterIcon,  } from "lucide-react";
 
 function HomeFirstElement() {
   return (
@@ -12,7 +13,7 @@ function HomeFirstElement() {
       <div className="h-screen lg:w-[75%] w-full flex flex-col items-center lg:items-start justify-center gap-4  z-[111] pt-11">
         <div className="md:text-5xl text-xl  w-full font-bold  pl-3 lg:pl-0  text-white ">
           <span className="text-blue-500 md:text-7xl text-4xl font-extrabold newRomman pb-4 md:pb-0">Welcome to</span>
-          <br />the Journal of Embedded and Digital System Design 
+          <br />Journal of Embedded and Digital System Design 
           <span className=" text-gray-300">(JEDSD)</span>
         </div>
         <TypingAnimation className="md:text-xl text-base pl-3 md:pl-0 text-white text-left ">
@@ -37,8 +38,13 @@ function HomeFirstElement() {
         style={{
           clipPath: "polygon(0 0, 100% 0%, 100% 100%, 0 100%, 43% 46%)",
         }}
-      >
-        
+      ><div className="absolute bottom-4 right-3 flex gap-6 justify-center items-center h-fit w-fit lg:text-black text-white">
+      <MailCheckIcon className="hover:scale-125 transition-all duration-300 cursor-pointer" />
+      <FacebookIcon className="hover:scale-125 transition-all duration-300 cursor-pointer" />
+      <Instagram className="hover:scale-125 transition-all duration-300 cursor-pointer" />
+      <TwitterIcon className="hover:scale-125 transition-all duration-300 cursor-pointer" />
+    </div>
+         
       </div>
 
       {/* Background Image for smaller screens */}
@@ -51,7 +57,14 @@ function HomeFirstElement() {
         style={{
           background: "radial-gradient(circle, rgba(23,37,56,0) 30%, rgba(0,0,0) 100%)",
         }}
-      ></div>
+      >
+        <div className="absolute bottom-4 right-3 flex gap-6 justify-center items-center h-fit w-fit lg:text-black text-white">
+              <MailCheckIcon className="hover:scale-125 transition-all duration-300 cursor-pointer" />
+              <FacebookIcon className="hover:scale-125 transition-all duration-300 cursor-pointer" />
+              <Instagram className="hover:scale-125 transition-all duration-300 cursor-pointer" />
+              <TwitterIcon className="hover:scale-125 transition-all duration-300 cursor-pointer" />
+            </div>
+      </div>
       
     </div></>
   );
