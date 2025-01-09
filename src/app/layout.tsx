@@ -15,15 +15,18 @@ const geistMono = Geist_Mono({
 // Metadata configuration
 export const metadata: Metadata = {
   title: "JEDSD - Journal of Embedded and Digital System Design",
-  description: "Journal of Embedded and Digital System Design. A pioneering platform dedicated to advancing the fields of embedded systems and digital design. At JEDSD, we aim to bridge the gap between innovation and application by providing insightful research, expert analysis, and cutting-edge solutions.",
+  description:
+    "Journal of Embedded and Digital System Design. A pioneering platform dedicated to advancing the fields of embedded systems and digital design. At JEDSD, we aim to bridge the gap between innovation and application by providing insightful research, expert analysis, and cutting-edge solutions.",
   icons: {
     icon: [
       {
-        url: '/logojedsd.jpg',
+        url: "/logojedsd.jpg",
       },
     ],
-  }
-  
+  },
+  other: {
+    "google-site-verification": "P2Y8X-_uCxmaPSyTZKfeZsv6tULWuEao05ezrbrwsGk",
+  },
 };
 
 export default function RootLayout({
@@ -33,7 +36,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <meta name="google-site-verification" content="P2Y8X-_uCxmaPSyTZKfeZsv6tULWuEao05ezrbrwsGk" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
