@@ -1,6 +1,6 @@
 import React from "react";
 
-import HomepageProject from "./HomepageProject";
+
 
 function HomeSecondElement() {
   return (
@@ -8,7 +8,7 @@ function HomeSecondElement() {
       <div className="w-full h-fit ">
 
 
-      <HomepageProject />
+     
       </div>
     </div>
   );
