@@ -24,25 +24,7 @@ import { useRouter } from "next/navigation";
 
 function Navbar() {
   const [isChangeBg, setIsChangeBg] = useState(false);
-  const [isLoginRotatting, setIsLoginRotatting] = useState<boolean | null>(null);
-  const [userImage, setUserImage] = useState<string | null>(null);
-  const [userId, setUserId] = useState<string | null>(null);
-  const router = useRouter();
-
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setIsChangeBg(true);
-    }, 3000);
-
-    return () => clearTimeout(timeoutId); // Cleanup the timeout on unmount
-  }, []);
-
-  useEffect(() => {
-    if (userImage) {
-      console.log('User image updated:', userImage);
-    }
-  }, [userImage]);
-
+  
   return (
     <DropdownMenu>
       <div
@@ -85,18 +67,12 @@ function Navbar() {
               <Search />
             </div>
             <div className="flex items-center gap-4">
-              {userId && (
-                <Link href={`/user/${userId}`} className="flex items-center">
-                  {userImage && (
-                    <Image height={100} width={100} src={userImage} alt="user" className="h-8 w-8 rounded-full" />
-                  )}
-                </Link>
-              )}
+             
               <div
                 className={`flex item-center gap-2 flex-row cursor-pointer ${isChangeBg ? 'text-black' : 'text-white'}`}
               
               >
-                {isLoginRotatting ? <Loader className="animate-spin" /> : !userImage ? <><LogIn /> Sign In</> : null}
+               SignIn
               </div>
             </div>
           </div>

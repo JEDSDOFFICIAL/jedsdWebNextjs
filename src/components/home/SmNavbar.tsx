@@ -6,16 +6,14 @@ import {
   ChevronRight,
   FacebookIcon,
   Instagram,
-  Loader,
-  LogIn,
+
   MailCheckIcon,
   SearchIcon,
   TwitterIcon,
-  User,
+
   X,
  
 } from "lucide-react";
-import { getAuth, onAuthStateChanged } from "firebase/auth";
 import React, { useState } from "react";
 import "./SmNavbar.css"; // Import the CSS file for animations
 import { Button } from "../ui/button";
