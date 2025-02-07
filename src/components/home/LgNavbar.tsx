@@ -20,11 +20,20 @@ import {
 } from "@/components/ui/dropdown-menu";
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+
 
 function Navbar() {
   const [isChangeBg, setIsChangeBg] = useState(false);
-  
+ 
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setIsChangeBg(true);
+    }, 3000);
+
+    return () => clearTimeout(timeoutId); // Cleanup the timeout on unmount
+  }, []);
+
   return (
     <DropdownMenu>
       <div
@@ -72,7 +81,7 @@ function Navbar() {
                 className={`flex item-center gap-2 flex-row cursor-pointer ${isChangeBg ? 'text-black' : 'text-white'}`}
               
               >
-               SignIn
+                Sign In
               </div>
             </div>
           </div>
