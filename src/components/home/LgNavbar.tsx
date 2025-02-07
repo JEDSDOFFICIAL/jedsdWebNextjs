@@ -7,8 +7,6 @@ import {
   ChevronDown,
   FacebookIcon,
   Instagram,
-  Loader,
-  LogIn,
   MailCheckIcon,
   Search,
   XIcon,
