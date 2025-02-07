@@ -1,9 +1,13 @@
+"use client";
+
 import {
   AlignLeft,
   ChevronLeft,
   ChevronRight,
   FacebookIcon,
   Instagram,
+  Loader,
+  LogIn,
   MailCheckIcon,
   SearchIcon,
   TwitterIcon,
@@ -11,14 +15,17 @@ import {
   X,
  
 } from "lucide-react";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 import React, { useState } from "react";
 import "./SmNavbar.css"; // Import the CSS file for animations
 import { Button } from "../ui/button";
 import Link from "next/link";
 import Image from "next/image";
 
+
 function SmNavbar() {
   const [isClicked, setIsClicked] = useState(false);
+  
 
   const ClickEvent = () => {
     setIsClicked(!isClicked);
@@ -38,7 +45,7 @@ function SmNavbar() {
   const AboutcloseModal = () => {
     setIsAboutClicked(false);
   };
-
+  
   return (
     <div className="w-full h-fit flex bg-white backdrop-filter backdrop-blur-sm bg-opacity-50  text-black items-center justify-between p-3">
       <div className="flex h-full w-auto gap-6 items-center">
@@ -48,7 +55,7 @@ function SmNavbar() {
       </div>
       <div className="flex h-full w-auto gap-6 items-center">
         <SearchIcon onClick={()=>{alert("We are currently working on it ... plz check after some time")}}/>
-        <User onClick={()=>{alert("We are currently working on it ... plz check after some time")}}/>
+       
       </div>
       {isClicked && (
         <div className="fixed top-0 left-0 w-full h-screen flex z-[111]">
@@ -66,7 +73,7 @@ function SmNavbar() {
                 >
                   About Us <ChevronRight />
                 </li>
-                <li>Tutorials</li>
+                
                 <li>Articles</li>
                 <li>Download Policies</li>
               </div>
@@ -89,10 +96,17 @@ function SmNavbar() {
                 <Button
                   variant={"destructive"}
                   size={"lg"}
-                  className="w-[95vw] shadow-xl text-xl mt-11"
+                  className={`w-[95vw] shadow-xl text-xl mt-11 `}
+                  // onClick={handleLogin}
                 >
-                  Sign In
+                 {/* {
+                  !isLoginRotatting && !userImage &&<> Sign In </>
+                }
+                {
+                  isLoginRotatting && <Loader className="animate-spin" />
+                } */}
                 </Button> </div>
+                
               </ul>
             </nav>
             <div className="absolute bottom-4 right-3 flex gap-6 justify-center items-center h-fit w-fit text-white">
@@ -100,6 +114,9 @@ function SmNavbar() {
               <FacebookIcon className="hover:scale-125 transition-all duration-300 cursor-pointer" />
               <Instagram className="hover:scale-125 transition-all duration-300 cursor-pointer" />
               <TwitterIcon className="hover:scale-125 transition-all duration-300 cursor-pointer" />
+             {/* {
+                userImage && isLoggedIn && <Image src={userImage} height={100} width={100} alt="user" className="h-8 w-8 rounded-full"/>
+             } */}
             </div>
           </div>
         </div>
@@ -137,34 +154,19 @@ const AboutNavbar = () => {
               Who are we
             </p>
             <div className="flex flex-col gap-2 text-lg">
+              <Link href={"/mission"} className=" text-gray-200 hover:text-white transition-all delay-100 cursor-pointer">
+                Our Mission and Vision
+              </Link>
+            
+              <Link href={'/team'} className=" text-gray-200 hover:text-white transition-all delay-100 cursor-pointer">
+                Editorial Team
+              </Link>
               <p className=" text-gray-200 hover:text-white transition-all delay-100 cursor-pointer">
-                Our Mission
-              </p>
-              <p className=" text-gray-200 hover:text-white transition-all delay-100 cursor-pointer">
-                Our Vision
-              </p>
-              <p className=" text-gray-200 hover:text-white transition-all delay-100 cursor-pointer">
-                Our Team
-              </p>
+                Contact Us</p>
+
             </div>
           </div>
-          <div className="flex flex-col gap-4 text-base">
-            <p className=" text-gray-200 hover:text-white text-2xl underline transition-all delay-100 cursor-pointer">
-              News and Announcement
-            </p>
-            <div className="flex flex-col gap-2 text-lg">
-              <p className=" text-gray-200 hover:text-white transition-all delay-100 cursor-pointer">
-                Call for Papers
-              </p>
-             
-              <p className=" text-gray-200 hover:text-white transition-all delay-100 cursor-pointer">
-                Recognitions
-              </p>
-              <p className=" text-gray-200 hover:text-white transition-all delay-100 cursor-pointer">
-                New Members
-              </p>
-            </div>
-          </div>
+          
           <div className="flex flex-col gap-4 text-base">
             <p className=" text-gray-200 hover:text-white text-2xl underline transition-all delay-100 cursor-pointer">
               Policies and Guideline
@@ -192,12 +194,11 @@ const AboutNavbar = () => {
                 How we publish
               </p>
               <p className=" text-gray-200 hover:text-white transition-all delay-100 cursor-pointer">
-                Templates
-              </p>
+                Call for Papers</p>
               <p className=" text-gray-200 hover:text-white transition-all delay-100 cursor-pointer">
-                Open access
+                Download Templates
               </p>
-              
+           
               <p className=" text-gray-200 hover:text-white transition-all delay-100 cursor-pointer">
                 Peer review
               </p>
@@ -207,20 +208,8 @@ const AboutNavbar = () => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-4 text-base">
-            <p className=" text-gray-200 hover:text-white text-2xl underline transition-all delay-100 cursor-pointer">
-              Get in Touch
-            </p>
-            <div className="flex flex-col gap-2 text-lg">
-              
-              <p className=" text-gray-200 hover:text-white transition-all delay-100 cursor-pointer">
-                Contact Us
-              </p>
-              <p className=" text-gray-200 hover:text-white transition-all delay-100 cursor-pointer">
-                Mail Us
-              </p>
-            </div>
-          </div>
+         
+         
         </div>
       </div>
     </nav>

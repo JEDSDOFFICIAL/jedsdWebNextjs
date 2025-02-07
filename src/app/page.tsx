@@ -4,7 +4,7 @@ import React from 'react';
 // import Loader from '@/components/Genaral/Loader';
 import Footer from "@/components/home/Footer";
 import HomeFirstElement from "@/components/home/HomeFirstElement";
-import Navbar from "@/components/home/LgNavbar";
+ import Navbar from "@/components/home/LgNavbar";
 import Roadmap from "@/components/home/Roadmap";
 import SmNavbar from "@/components/home/SmNavbar";
 // import Testimonials from "@/components/home/Testimonials";
@@ -38,3 +38,4 @@ export default function Home() {
       
   );
 }
+

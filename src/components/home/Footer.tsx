@@ -30,7 +30,7 @@ function Footer() {
                 className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800"
                 href="#"
               >
-                Our Team
+                Editorial Team
               </a>
             </p>
             <p>
@@ -38,15 +38,7 @@ function Footer() {
                 className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800"
                 href="#"
               >
-                Our vision
-              </a>
-            </p>
-            <p>
-              <a
-                className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800"
-                href="#"
-              >
-                Our Mission
+                Our Mission and Vision
               </a>
             </p>
             
@@ -100,18 +92,11 @@ function Footer() {
                 className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800"
                 href="#"
               >
-                Community
-              </a>
-            </p>
-            <p>
-              <a
-                className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800"
-                href="#"
-              >
-                Help & Support
+                Download Templates
               </a>
             </p>
             
+           
           </div>
         </div>
 
